@@ -1,1 +1,606 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.5;
 
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+}
+/*container*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height:100vh;
+}
+/*Navigation*/
+.Navigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: block;
+    vertical-align:top;
+}
+/*Intro*/
+.Intro {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url("../images/fon 1.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+}
+.Intro_inner {
+    width: 90%;
+    margin: 0 auto;
+    text-align:left;
+
+}
+.Intro_Schedule {
+    width: 20%;
+    margin: 70px 0px 0px 20px;
+    text-align: left;
+    font-family: 'Times New Roman', sans-serif;
+}
+.Intro_title {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+.Intro_suptitle {
+    font-size:24px;
+    text-align:left;
+    line-height: 1.0;
+}
+.Intro_adress{
+   font-size:32px;
+   font-weight:bold;
+}
+/*header*/
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E43071;
+    height:11%;
+}
+.header_logo {
+    font-weight:bold;
+    font-size:40px;
+    margin-left:20px;
+    margin-top: 6px;
+
+}
+.header_logo_one {
+    color:#FFFFFF;
+}
+.header_logo_two {
+    color: #FFC1D8;
+}
+/*nav*/
+.nav {
+    font-family: Roboto, sans-serif;
+    font-size:16px;
+    margin-right:10px;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 10px 30px 40px;
+    color:#FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+.nav_link:hover {
+    color:#FFFFFF;
+}
+.nav_link:hover:after {
+    opacity: 1;
+}
+/*Button*/
+.button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 50px;
+    border: 2px solid #E43071;
+    border-radius: 20PX;
+    margin: 23px 10px 30px 40px;
+    color: #E43071;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+.sub_button {
+    padding: 10px 80px;
+    border: 3px solid #E43071;
+    border-radius: 30px;
+    color: #E43071;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F4E3E9;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+.sub_button:focus,
+.sub_button:hover {
+    background-color: #FFC1D8
+}
+.quebutton {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 60px;
+    border: 4px solid #000;
+    border-radius: 20PX;
+    margin: 23px 10px 30px 40px;
+    color: #000;
+    background-color: #E43071;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:24px;
+    margin-top:20%;
+    margin-left:37%;
+}
+.go-top{
+    position:fixed;
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:20px;
+    cursor:pointer;
+    padding: 10px 15px;
+    color:#FFFFFF;
+    border: 1px solid #000;
+    background-color:#E43071;
+    opacity:0;
+
+}
+/*Section*/
+.section {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4E3E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:-4%;
+}
+.section_header {
+    text-align: left;
+    color: #E43071;
+    margin-left: 50px;
+    font-size: 30px;
+    max-height:40%;
+}
+.section_text {
+    max-height:60%;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Times New Roman Cyr', sans-serif;
+}
+.section_image {
+    margin-top: 0px;
+    margin-right: 20px;
+    height:80%; 
+}
+/*Fitness_center_section*/
+.fitness_center_section {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/fon 2.jpg") center no-repeat;
+    background-size: cover;
+}
+.fintness_inner {
+    width: 100%;
+    height: 100%;
+}
+.fitnes_center_header {
+    margin-left: 60px;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 1.2;
+    height: 25%;
+}
+.fitness_center_header_color {
+    color: #E43071;
+}
+.fitness_center_qroop {
+    margin-left:200px;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 10% 40% 10% 40%;
+    grid-template-rows: 50% 50%;
+}
+.fitness_center_qroop_color {
+    color: #FFC1D8;
+    font-weight: bold;
+}
+.fitness_center_img1 {
+}
+.fitness_center_qroop1{
+    font-size:20px;
+    font-family:'Times New Roman Cyr', sans-serif;
+}
+.fitness_center_img2 {
+
+}
+.fitness_center_qroop2 {
+    font-size: 20px;
+    font-family: 'Times New Roman Cyr', sans-serif;
+}
+.fitness_center_img3 {
+
+}
+.fitness_center_qroop3 {
+    font-size: 20px;
+    font-family: 'Times New Roman Cyr', sans-serif;
+}
+.fitness_center_img4 {
+}
+.fitness_center_qroop4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+/*Subscription*/
+.subscription_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4E3E9;
+}
+.subscription_section_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subscription_image {
+    width: 40%;
+    margin-top:25px;
+    margin-left:60px;
+}
+.subscription_inner {
+    width: 60%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.subscription_form{
+    width:50%;
+    height:70%;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #E43071;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom:10%;
+}
+.subscription_title {
+    margin-top: 60px;
+    margin: 0 0 32px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #E43071;
+    text-align: center;
+    height: 20%;
+
+}
+.subscription_block {
+    position: relative;
+    margin-bottom: 32px;
+}
+.subscription_input {
+    margin-left: 10%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E43071;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    border: 3px solid #E43071;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+
+}
+.subscription_input:focus ~ .subscription_label,
+.subscription_input:not(:placeholder-shown) ~ .subscription_label {
+    color: #FFC1D8;
+}
+.subscription_label {
+    margin-left: 40px;
+    z-index: -1;
+    font-weight: bold;
+    color: #E43071;
+    transition: 0.3s;
+}
+.subscription_input:focus{
+    border: 4px solid #E43071;
+}
+/*Trainer*/
+.trainer_section {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/fon2.jpg") center no-repeat;
+    background-size: cover;
+}
+.trainer_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height:20%;
+}
+.trainer_title{
+    margin-top:1.3%;
+    font-size:40px;
+}
+.trainer_inner {
+    display: flex;
+    justify-content: space-between;
+    margin-left:60px;
+    margin-right:60px;
+}
+.trainer_block{
+    position:relative;
+}
+.trainer_image {
+    background: linear-gradient(to bottom,#FFC1D8,#E43071);
+}
+
+.trainer_block:hover .trainer_image img {
+    opacity: .1;
+}
+.trainer_block:hover .trainer_text{
+    opacity: 1;
+}
+
+.trainer_image img {
+    transition: opacity .2s linear;
+}
+.trainer_text{
+    width:100%;
+    color:#FFFFFF;
+    text-align:left;
+    opacity: 0;
+    font-size:14px;
+    font-weight: normal;
+    position:absolute;
+    top: -5px;
+    left:10px;
+    z-index:2;
+    transition: opacity .2s linear;
+    font-family:'Times New Roman',sans-serif;
+}
+.trainer_name {
+    margin-top: -6px;
+    padding: 5px 0 5px 0;
+    border: 3px solid #E43071;
+    text-align: center;
+    background-color: #E43071;
+    color:#FFFFFF;
+}
+/*Gym*/
+.Gym_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4E3E9;
+    display: flex;
+    flex-direction: column;
+}
+.Gym_header {
+    width:100%;
+    height:10%;
+    color: #E43071;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+}
+.Gym_header_inner{
+    width:100%;
+    height:30%;
+    display: flex;
+    justify-content: space-around;
+}
+.Gym_block_inner_text{
+    font-size: 20px;
+    color:#000000;
+    text-align:center;
+    width:300px;
+    margin-left:-70px;
+}
+.Gym_block_inner{
+    width:149px;
+    height:149px;
+    display:flex;
+    flex-direction: column;
+}
+.Gym_body_inner {
+    width:100%;
+    height:60%;
+    display: grid;
+    grid-template-columns: 33.1% 33.1% 33.1%;
+    grid-template-rows: 50% 50%;
+}
+.Gym_block_image{
+    position:relative;
+}
+.Gym_images {
+    background: linear-gradient(to bottom,#FFC1D8,#E43071);
+}
+.Gym_images img {
+     transition: opacity .1s linear;
+     display: block;
+}
+.Gym_block_image:hover .Gym_images img {
+    opacity: .3;
+}
+.Gym_block_image:hover .Gym_icon {
+    opacity: 1;
+}
+.Gym_icon {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 2;
+    transform: translate3d(0,-50%,0);
+    transition: opacity .2s linear;
+    opacity: 0;
+}
+/*Table*/
+.table {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,#FFC1D8,#E43071);
+}
+
+.table_header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top:100px;
+    margin-bottom:100px;
+    color:#000000;
+}
+.table_blocks {
+    margin-left: 125px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #E43071;
+    text-align:center;
+}
+.block {
+    border: 4px solid #000000;
+}
+/*Questions*/
+.questions {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+    background: url("../images/fon 4.jpg") center no-repeat;
+    background-size: cover;
+}
+.questions_block_one {
+    width: 70%;
+    height: 100%;
+}
+.questions_text {
+    margin-top:5%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    text-align:center;
+}
+.rectangle{
+
+    margin-left:19%;
+}
+.secret{
+    margin-top:5%;
+    opacity:0;
+    font-size:10px;
+}
+.questions_block_two{
+    margin-top:5%;
+    width:30%;
+    margin-right:10%
+}
+/*footer*/
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #0B0D17;
+}
+.footer_inner{
+
+}
+.footer_body{
+    display:flex;
+}
+.footer_info{
+   font-size:18px;
+   margin: 0 5%;
+}
+.footer_social{
+    font-size:18px;
+    text-align:center;
+}
+.social {
+    font-size: 18px;
+    margin-left:18%;
+    margin-top:28%;
+    text-align: center;
+}
+.block_icon{
+    display:flex;
+}
+.footer_icon{
+    margin:3%;
+}
+.footer_end{
+    margin-top:3%;
+    text-align:center;
+}
+
+/*Intro*/
+@media (max-width: 1230px) {
+    .Intro_Schedule {
+        width: 30%;
+    }
+}
+@media (max-width: 1073px) {
+    .header_logo {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .nav {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    margin-right: 0px;
+    }
+    .Intro_suptitle {
+        font-size: 20px;
+    }
+    .Intro_title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 903px) {
+    .header_logo {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .Intro_suptitle {
+        font-size: 15px;
+    }
+    .Intro_title {
+        font-size: 40px;
+    }
+}
